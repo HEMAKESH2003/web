@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "NnVAeFfeOuJcUJyfV",
+      });
+   })();
+</script>
+<body>
+<main>
+  <h1> Functional Contact Us</h1>
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" type="text">  
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input id="email" type="email">
+  </div>
+  <div>
+    <label for="number">number:</label>
+    <input id="mobile" type="text">
+  </div>
+  <div>
+    <label for="message">message:</label>
+    <input id="message" type="text">
+  </div>
+  <div>
+    <button onclick="sendmail()" type="submit">send mail</button>
+  </div>
+</main>
+</body>
+<script src="script.js"></script>
+</html>
